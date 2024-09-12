@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anomaly Terminal</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Anomalieerkennung</h1>
+    <table id="anomaly-table">
+        <thead>
+            <tr>
+                <th>Empfangene Anomalie Daten</th>
+            </tr>
+        </thead>
+        <tbody id="anomaly-tbody">
+            <!-- Die Anomaliedaten werden hier geladen -->
+        </tbody>
+    </table>
+
+    <script>
+        function fetchAnomalyData() {
+            fetch('/anomaly_data')
+                .then(response => response.json())
+                .then(data => {
+                    const tbody = document.getElementById('anomaly-tbody');
+                    tbody.innerHTML = ''; // Clear the table
+
+                    data.anomaly_data.forEach(entry => {
+                        const row = document.createElement('tr');
+                        const cell = document.createElement('td');
+                        cell.textContent = entry;
+                        row.appendChild(cell);
+                        tbody.appendChild(row);
+                    });
+                })
+                .catch(error => console.error('Error fetching anomaly data:', error));
+        }
+
+        // Initialer Aufruf der Funktion
+        fetchAnomalyData();
+
+        // Wiederholter Aufruf der Funktion alle 5 Sekunden
+        setInterval(fetchAnomalyData, 5000);
+    </script>
+</body>
+</html>

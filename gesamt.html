@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROS 2 Gesamt Image Stream</title>
+    <style>
+        /* Stellt sicher, dass die Tabelle in der Mitte der Seite zentriert ist */
+        table {
+            margin: 0 auto;
+            border-spacing: 10px; /* Abstand zwischen den Bildern */
+        }
+        /* Stellt sicher, dass die Bilder die gleiche Größe haben */
+        img {
+            width: 300px; /* Setzen Sie die Breite jedes Bildes */
+            height: auto;  /* Höhe wird automatisch angepasst, um das Seitenverhältnis zu bewahren */
+            border: 1px solid #ddd; /* Optional: Fügt jedem Bild einen Rahmen hinzu */
+            padding: 5px; /* Fügt Padding um jedes Bild hinzu */
+        }
+        /* Optional: Fügt einen Schatten um die Bilder hinzu */
+        img:hover {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Gesamtplots von Topics vom Magnetometer</h1>
+    <table>
+        <tr>
+            <td><img src="{{ url_for('gesamt_feed', image_index=0) }}"></td>
+            <td><img src="{{ url_for('gesamt_feed', image_index=1) }}"></td>
+        </tr>
+        <tr>
+            <td><img src="{{ url_for('gesamt_feed', image_index=2) }}"></td>
+            <td><img src="{{ url_for('gesamt_feed', image_index=3) }}"></td>
+        </tr>
+        <tr>
+            <td><img src="{{ url_for('gesamt_feed', image_index=4) }}"></td>
+            <td><img src="{{ url_for('gesamt_feed', image_index=5) }}"></td>
+        </tr>
+    </table>
+</body>
+</html>
