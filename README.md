@@ -1,4 +1,5 @@
-# GHOST x Mag: Unbemanntes System für automatisierte Aufklärung von Kampfmitteln
+# GHOST x Mag:
+## Unbemanntes System für automatisierte Aufklärung von Kampfmitteln
 
 Starten der Anwendung: /Main/Xlaunch.py
 
