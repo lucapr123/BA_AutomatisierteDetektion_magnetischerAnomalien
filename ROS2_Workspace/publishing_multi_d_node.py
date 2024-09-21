@@ -1,3 +1,5 @@
+# Publishen von Positionsdaten an UAV aus detektierten Anomalien
+
 import sys
 import rclpy
 from rclpy.node import Node
