@@ -1,3 +1,5 @@
+# Zum Speichern der Sensordaten (MCU-gefiltert in .csv-Datei)
+
 import serial
 import csv
 import re
