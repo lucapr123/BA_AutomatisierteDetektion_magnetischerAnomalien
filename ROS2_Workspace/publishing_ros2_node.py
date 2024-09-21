@@ -1,3 +1,4 @@
+# Publishe alle Sensordaten (Rohdaten, Totalfeld, Differenzen, Differenzen_Betrag, Integrierte_Differenz, Integrierte_Differenz_Betrag)
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float64
