@@ -1,3 +1,5 @@
+# Zum Speichern der Sensordaten (MCU-gefiltert und zusätzlich MCU-ungefiltert)
+# Anstatt Automat_D_Filter_Rohdaten_Ausgabe.py verwenden
 import pandas as pd
 import matplotlib.pyplot as plt
 import time
