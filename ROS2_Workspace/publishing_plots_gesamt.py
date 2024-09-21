@@ -1,3 +1,4 @@
+# Publishen der Gesamt-Plots nach Beenden der Messung
 import sys
 import rclpy
 from rclpy.executors import SingleThreadedExecutor
