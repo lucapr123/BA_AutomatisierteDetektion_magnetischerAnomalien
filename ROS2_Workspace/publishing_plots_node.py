@@ -1,3 +1,4 @@
+# Publishen der Plots während der Messung in Echzeit
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
