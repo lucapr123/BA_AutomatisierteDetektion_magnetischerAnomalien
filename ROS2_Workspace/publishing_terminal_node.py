@@ -1,3 +1,4 @@
+# Publishe Informationen aus der automatisierten Anomalieerkennung
 import sys
 import rclpy
 from rclpy.node import Node
