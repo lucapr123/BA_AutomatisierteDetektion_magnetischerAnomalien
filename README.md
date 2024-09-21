@@ -13,4 +13,4 @@ Pfad für aktuelle Messungen im UGV: ~/Magnetometer/Datenerfassung/Messungen_Arc
 
 ## Beispiel
 
-[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://youtu.be/frJqmdIauZg?si=-OxTf2473fRKUhFG)
+[https://youtu.be/frJqmdIauZg?si=-OxTf2473fRKUhFG]
