@@ -1,0 +1,18 @@
+{
+  "folders": [
+    {
+      "name": "GHOST x Mag",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/__pycache__": true
+    },
+    "search.exclude": {
+      "**/build": true,
+      "**/install": true,
+      "**/log": true
+    }
+  }
+}
