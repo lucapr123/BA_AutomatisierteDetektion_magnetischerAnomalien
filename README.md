@@ -1,4 +1,4 @@
-# GHOST x Mag
+# ghost X mag
 
 Bachelor's thesis prototype for automated magnetic anomaly detection with an unmanned ground vehicle.
 
